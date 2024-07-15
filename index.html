@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Weather</title>
+      <link rel="shortcut icon" href="imges/pexels-pixabay-209831.jpg">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark py-5">
+        <div class="container">
+          <a class="navbar-brand d-flex" href="#"><img src="imges/logo.png" alt="logo" class="d-inline-block align-text-top me-2">
+            <div><h2>Weather</h2><span>tagline goes here</span></div>
+          </a>
+
+          <button class="navbar-toggler rounded-pill py-3 my-3 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active rounded-pill border border-info px-4 text-info mx-1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 rounded-pill mx-1" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 rounded-pill mx-1" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 rounded-pill mx-1" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 rounded-pill ms-1" href="#">Contact</a>
+              </li>
+            </ul>
+         
+          </div>
+        </div>
+      </nav>
+
+
+      <section style="background-image: url(imges/banner.png);" class="py-5">
+        <div class="container">
+
+          <div class="d-flex FL mb-5">
+            <input type="search" name="location" class="py-3 rounded-pill px-3 w-100 " placeholder="find your location..." style="border: none;color: aliceblue;" id="Location">
+            <button type="button" class="btn btn-primary rounded-pill  px-4">Find</button>
+          </div>
+
+
+          <div class="ThreeCards row  d-flex align-items-stretch">
+            <!--/////////////////////////////today data section//////////////////////////-->
+            <div class="FirstCard col-lg-4 " >
+              <header class="d-flex justify-content-between p-2 rounded-start">
+                <h4 id="today_name" >Saturday</h4>
+                <h4 ><span id="today_number" class="me-1">29</span><span id="today_month">December</span></h4>
+              </header>
+              <div class="Weather py-4 px-3">
+                <h3 class="fs-5" id="conutry_name">Cairo</h3>
+                <div class="row  mt-3 align-items-center">
+                    <div class="col-6 text-white"><h2 ><span id="today_tem">21</span><sup>o</sup>C</h2></div>
+                    <div  class="col-6 text-end"><img id="today_img" src="imges/116.webp" alt=""></div>
+                </div>
+                <h5 class="text-info fs-6 mt-3 fw-light" id="today_text">Partly cloudy</h5>
+                <div class="d-flex LastLine mt-3">
+                  <h5 class="d-flex me-3"><img src="imges/icon-umberella.png" alt="" class="me-2"><span id="humidity">20</span>%</h5>
+                  <h5 class="d-flex me-3"><img src="imges/icon-wind.png" alt="" class="me-2"><span id="today_wind">18</span>km/h</h5>
+                  <h5 class="d-flex me-3"><img src="imges/icon-compass.png" alt="" class="me-2"><span id="wind_direction">East</span></h5>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <!--//////////////////////tomorrow data section////////////////////////-->
+            <div class="SecondCard col-lg-4  bg-danger " >
+              <div class="h-100  custom-col">
+                <header class=" p-2 " id="tomorrow_date">
+                  <h4 class="text-center next_day_name">Sunday</h4>
+                </header>
+                <div class="Weather py-4 px-3" id="tomorrow">
+                  <div class="mt-3 ">
+                      <div  class=" text-center mb-4"><img src="imges/113 (1).png" alt="" class="next_condition_img"></div>
+                      <div class="text-white text-center"><h2><span class="next_max_tem">21.6</span><sup>o</sup>C</h2></div>
+                      <div class="text-white text-center "><h2 id="Night"><span class="next_min_tem">14.1</span><sup>o</sup></h2></div>
+                  </div>
+                  <h5 class="text-info fs-6 mt-3 fw-light text-center next_condition_text">Sunny</h5>
+                  
+                </div>
+  
+              </div>
+            </div>
+
+            <!--////////////////////////////day after tomorrow data section//////////////-->
+            <div class="ThirdCard col-lg-4  bg-danger " >
+              <div class="h-100  custom-col">
+                <header class=" p-2 ">
+                  <h4 class="text-center next_day_name">Monday</h4>
+                </header>
+                <div class="Weather py-4 px-3">
+                  <div class="mt-3 ">
+                      <div  class=" text-center mb-4"><img src="imges/113 (1).png" alt="" class="next_condition_img"></div>
+                      <div class="text-white text-center"><h2><span class="next_max_tem">21.6</span><sup>o</sup>C</h2></div>
+                      <div class="text-white text-center "><h2 id="Night"><span class="next_min_tem">14.1</span><sup>o</sup></h2></div>
+                  </div>
+                  <h5 class="text-info fs-6 mt-3 fw-light text-center next_condition_text">Sunny</h5>
+                  
+                </div>
+  
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+
+
+      <footer class="py-5">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-between ">
+            <div class="d-flex FL mb-3 ">
+              <input type="search" name="location" class="py-3 rounded-pill px-3 w-100" placeholder="find your email to subscribe..." style="border: none; color: aliceblue;" id="Subscribe">
+              <button type="button" class="btn btn-primary rounded-pill  px-4">subscribe</button>
+            </div>
+
+            <div class="Icons fs-5 d-flex ">
+              <div class="bg-secondary text-center rounded-circle d-flex align-items-center justify-content-center mx-3 BG" style="width: 35px;height: 35px;">
+                <i class="fa-brands fa-facebook-f  text-info "></i>
+              </div>
+              <div class="bg-secondary text-center rounded-circle d-flex align-items-center justify-content-center mx-3 BG" style="width: 35px;height: 35px;">
+                <i class="fa-brands fa-twitter  text-info "></i>
+              </div>
+              <div class="bg-secondary text-center rounded-circle d-flex align-items-center justify-content-center mx-3 BG" style="width: 35px;height: 35px;">
+                <i class="fa-brands fa-google-plus-g  text-info"></i>
+              </div>
+              <div class="bg-secondary text-center rounded-circle d-flex align-items-center justify-content-center mx-3 BG" style="width: 35px;height: 35px;">
+                <i class="fa-brands fa-pinterest text-info"></i> 
+              </div>
+             
+            </div>
+
+
+          </div>
+          <h5 class="fs-6 text-white-50">Copyright 2014 Company name. Designed by Themezy. All rights reserved</h5>
+        </div>
+      </footer>
+       
+
+
+
+
+        
+     <script src="js/script.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
